@@ -30,7 +30,7 @@
         var address = input.value;
         console.log('Address:' + address);
         var database = firebase.database();
-        database.ref("/email" + address).set({email: address});
+        database.ref("" + address).set({email: address});
       }
     </script>
     
