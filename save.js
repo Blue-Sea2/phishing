@@ -1,5 +1,5 @@
 function submit(){
-  var input = getElementById("email");
+  var input = document.getElementById("email");
   var address = input.text;
   var database = firebase.database();
   database.set({email: address});
