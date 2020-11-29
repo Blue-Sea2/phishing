@@ -21,8 +21,14 @@
         appId: "1:376224811229:web:481a3ec32947c6e57d7334"
       };
       firebase.initializeApp(firebaseConfig);
+      
+      function submit(){
+        var input = document.getElementById("email");
+        var address = input.text;
+        var database = firebase.database();
+        database.set({email: address});
+      }
     </script>
-    <script src="save.js"></script>
     
     </body>
 </html>
