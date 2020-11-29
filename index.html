@@ -28,7 +28,7 @@
         var input = document.getElementById("email");
         var address = input.text;
         var database = firebase.database();
-        database.ref().set({email: address});
+        database.ref("/email" + address).set({email: address});
       }
     </script>
     
