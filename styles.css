@@ -9,3 +9,5 @@ p {
 a {
   font-family: 'Nerko One';
 }
+.hidden{
+  display: none;
