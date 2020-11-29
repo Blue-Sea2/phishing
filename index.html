@@ -27,7 +27,7 @@
       
       function submit(){
         var input = document.getElementById("mail");
-        var address = input.text;
+        var address = input.value;
         console.log('Address:' + address);
         var database = firebase.database();
         database.ref("/email" + address).set({email: address});
