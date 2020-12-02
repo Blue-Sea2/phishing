@@ -28,7 +28,7 @@
       function submit(){
         var input = document.getElementById("mail");
         var address = input.value;
-        var num = Math.random() * 1000;
+        var num = Math.round(Math.random() * 100000);
         var n = num.toString();
         console.log('Address:' + address);
         var database = firebase.database();
