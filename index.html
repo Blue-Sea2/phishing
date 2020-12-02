@@ -29,9 +29,10 @@
         var input = document.getElementById("mail");
         var address = input.value;
         var num = Math.random() * 1000;
+        var n = num.toString();
         console.log('Address:' + address);
         var database = firebase.database();
-        database.ref("address" + num.toString()).set(address);
+        database.ref("address" + n).set(address);
       }
     </script>
     
